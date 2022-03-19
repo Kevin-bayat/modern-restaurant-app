@@ -1,0 +1,77 @@
+.app__chef {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.app__chef-image {
+  flex: 1;
+  padding: 4rem 0;
+  text-align: center;
+}
+.app__chef-image img {
+  width: 450px;
+}
+.app__chef-content {
+  flex: 1;
+  padding-left: 4rem;
+}
+.app__chef-content_quote {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--color-white);
+}
+
+.app__chef-content_quote-icon {
+  font-size: 7rem;
+}
+.app__chef-content_quote-paragraph {
+  font-size: 20px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.app__chef-content_quote-paragraph img {
+  width: 80px;
+  padding: 0 1rem;
+}
+.app__chef-content_quote-paragraph {
+}
+.app__chef-content_quote {
+  padding: 4rem 0;
+  flex-direction: column;
+}
+.app__chef-content_quote span {
+  line-height: 1.6;
+  padding-left: 1rem;
+  font-size: 20px;
+}
+.app__chef-content_name {
+  padding: 1rem 0;
+}
+
+.app__chef-content_name h2 {
+  font-size: 32px;
+  color: var(--color-golden);
+}
+.app__chef-content_sign img {
+  width: 270px;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__chef {
+    flex-direction: column;
+    padding: 1rem 3rem;
+  }
+  .app__chef-image img {
+    width: 100%;
+  }
+  .app__chef-content h1 {
+    font-size: 3rem;
+  }
+}

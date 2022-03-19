@@ -1,0 +1,37 @@
+.app__menuItem {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.app__menuItem-head {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.app__menuItem-head-border {
+  width: 90px;
+  height: 1px;
+  background-color: var(--color-golden);
+  margin: 0 1rem;
+}
+.app__menuItem-sub p {
+  width: 100%;
+  margin-top: 0.2rem;
+  font-size: 16px;
+}
+.app__menuItem-head-name {
+  flex: 1;
+  width: 100%;
+}
+.app__menuItem-head-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media screen and (max-width: 650px) {
+  .app__menuItem-sub p {
+    font-size: 13px;
+  }
+}
