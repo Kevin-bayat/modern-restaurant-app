@@ -8,6 +8,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const toggleMenuHandler = () => {
+    setToggleMenu((prevState) => !prevState);
+  };
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -43,29 +46,29 @@ const Navbar = () => {
         <GiHamburgerMenu
           color="#fff"
           fontSize={27}
-          onClick={() => setToggleMenu(true)}
+          onClick={toggleMenuHandler}
         />
         {toggleMenu && (
-          <div className="app__navbar-smallScreen_overlay flex__center slide__bottom">
+          <div className="app__navbar-smallScreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
-              onClick={() => setToggleMenu(false)}
+              onClick={toggleMenuHandler}
             />
             <ul className="app__navbar-smallScreen_links">
-              <li className="p__openSans">
+              <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#home">HOME</a>
               </li>
-              <li className="p__openSans">
+              <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#about">ABOUT</a>
               </li>
-              <li className="p__openSans">
+              <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#menu">MENU</a>
               </li>
-              <li className="p__openSans">
+              <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#awards">AWARDS</a>
               </li>
-              <li className="p__openSans">
+              <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#contacts">CONTACTS</a>
               </li>
             </ul>

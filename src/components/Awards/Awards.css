@@ -1,0 +1,10 @@
+.app_award {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.app__laurels-awards_info-contents:nth-child(1) {
+  color: var(--color-golden);
+}
